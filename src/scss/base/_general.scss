@@ -26,7 +26,18 @@ body {
   line-height: 1.2;
   color: $text;
   border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn_accent {
-  background: #ffba08;
+  background: $accent;
+}
+.btn_black {
+  background: #0c0800;
+  color: white;
+}
+
+.text_accent {
+  color: $accent;
 }
