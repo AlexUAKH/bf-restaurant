@@ -331,6 +331,26 @@ body {
   padding: 0 1rem;
 }
 
+.title,
+.subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  color: #000000;
+  text-align: center;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.22;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
 .btn {
   padding: 10px 27px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
@@ -600,6 +620,93 @@ ul {
 .call__appstore {
   width: 138px;
   height: 48px;
+}
+
+.features {
+  background: rgba(217, 217, 217, 0.2);
+  padding: 16px;
+}
+@media (min-width: 620px) {
+  .features {
+    padding: 16px 16px 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .features {
+    padding: 16px 16px 100px;
+  }
+}
+.features__title {
+  margin-bottom: 16px;
+}
+.features__subtitle {
+  margin-bottom: 20px;
+}
+.features__feature {
+  margin: 0 10px;
+}
+@media (min-width: 960px) {
+  .features__feature {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1100px) {
+  .features__feature {
+    margin: 0 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .features__feature {
+    margin: 0 180px;
+  }
+}
+
+.feature {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 40px;
+}
+@media (min-width: 620px) {
+  .feature {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 55px;
+  }
+}
+@media (min-width: 900px) {
+  .feature {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 50px;
+  }
+}
+.feature__item {
+  max-width: 400px;
+}
+.feature__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #000000;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.feature__img {
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+.feature__description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: #000000;
 }
 
 .footer {
