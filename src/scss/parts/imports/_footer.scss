@@ -1,0 +1,165 @@
+.footer {
+  margin: 14px;
+  @media (min-width: 900px) {
+    margin: 14px 30px 14px 40px;
+  }
+  @media (min-width: 1500px) {
+    margin: 14px 68px 14px 110px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media (min-width: 700px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__about {
+    margin-right: 68px;
+    @media (min-width: 700px) {
+      flex: 0 0 240px;
+    }
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.24;
+    color: $footer-title;
+    white-space: nowrap;
+    @media (min-width: 700px) {
+      font-size: 1.06rem;
+    }
+  }
+
+  &__about-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    color: $text;
+  }
+
+  &__about-us {
+    margin-right: 50px;
+  }
+
+  &__list {
+    margin-top: 11px;
+  }
+
+  &__list-item {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.24;
+    color: $footer-title;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    @media (min-width: 700px) {
+      font-size: 1.06rem;
+    }
+  }
+
+  &__get-help {
+    margin-right: 60px;
+  }
+
+  &__call-us {
+    margin-right: 60px;
+  }
+  &__call-phone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.24;
+    color: $footer-title;
+    margin-top: 10px;
+    @media (min-width: 700px) {
+      font-size: 1.06rem;
+    }
+  }
+
+  &__store {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 8px;
+  }
+
+  &__social {
+    margin-top: 30px;
+    display: flex;
+    gap: 17px;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__hr {
+    margin-top: 24px;
+    border: 1px solid #ccc0c0;
+    @media (min-width: 700px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__info {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__policy {
+    flex: 1 0;
+    align-self: flex-start;
+    display: flex;
+    &-item {
+      padding: 5px;
+      white-space: nowrap;
+      color: $footer-title;
+    }
+    @media (min-width: 900px) {
+      margin-left: 25px;
+      &-item {
+        padding: 0 5px;
+      }
+    }
+    @media (min-width: 1200px) {
+      &-item:not(:first-child) {
+        border-left: 1px solid $text;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-right: 9px;
+    margin-top: 10px;
+    @media (min-width: 1400px) {
+      margin-top: 32px;
+    }
+  }
+}
+
+.collapse__container {
+  display: none;
+}
+
+.open {
+  & ~ .collapse__container {
+    display: block;
+  }
+}

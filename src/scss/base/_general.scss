@@ -37,7 +37,47 @@ body {
   background: #0c0800;
   color: white;
 }
+.btn_gplay {
+  background: url("@img/google_play_btn.png") 0 0 no-repeat;
+}
+
+.btn_appstore {
+  background: url("@img/app_store_btn.png") 0 0 no-repeat;
+}
+
+.icon-btn {
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s;
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  @media (min-width: 700px) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
 
 .text_accent {
   color: $accent;
+}
+ul {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: $text;
+  transition: all 0.3s;
+  @media (min-width: 700px) {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
