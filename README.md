@@ -1,1 +1,1 @@
-# DEMO: https://alexuakh.github.io/bf-restaurant/
+## DEMO: https://alexuakh.github.io/bf-restaurant/
