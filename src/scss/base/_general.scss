@@ -24,13 +24,19 @@ body {
 }
 .title {
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.22;
+  @media (min-width: 600px) {
+    font-size: 2rem;
+  }
 }
 .subtitle {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
+  @media (min-width: 600px) {
+    font-size: 2rem;
+  }
 }
 
 .btn {
@@ -47,20 +53,39 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-.btn_accent {
-  background: $accent;
-}
-.btn_black {
-  background: #0c0800;
-  color: white;
-}
-.btn_gplay {
-  background: url("@img/google_play_btn.png") 0 0 no-repeat;
-}
-
-.btn_appstore {
-  background: url("@img/app_store_btn.png") 0 0 no-repeat;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+  &:active {
+    top: 2px;
+    left: 2px;
+  }
+  @media (min-width: 700px) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &_accent {
+    background: $accent;
+  }
+  &_black {
+    background: #0c0800;
+    color: white;
+  }
+  &_outline {
+    border: 1px solid black;
+  }
+  &_blue-outline {
+    border: 1px solid $blue;
+    background: transparent;
+    color: $blue;
+  }
+  &_gplay {
+    background: url("@img/google_play_btn.png") 0 0 no-repeat;
+  }
+  &_appstore {
+    background: url("@img/app_store_btn.png") 0 0 no-repeat;
+  }
 }
 
 .icon-btn {
@@ -93,6 +118,7 @@ ul {
   text-decoration: none;
   color: $text;
   transition: all 0.3s;
+  cursor: pointer;
   @media (min-width: 700px) {
     &:hover {
       opacity: 0.5;

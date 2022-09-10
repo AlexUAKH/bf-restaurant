@@ -127,10 +127,14 @@
     flex: 1 0;
     align-self: flex-start;
     display: flex;
+    flex-wrap: wrap;
     &-item {
       padding: 5px;
       white-space: nowrap;
       color: $footer-title;
+    }
+    @media (min-width: 310px) {
+      flex-wrap: nowrap;
     }
     @media (min-width: 900px) {
       margin-left: 25px;
