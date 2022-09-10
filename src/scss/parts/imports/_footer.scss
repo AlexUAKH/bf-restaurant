@@ -18,9 +18,12 @@
   }
 
   &__about {
-    margin-right: 68px;
     @media (min-width: 700px) {
+      margin-right: 35px;
       flex: 0 0 240px;
+    }
+    @media (min-width: 1400px) {
+      margin-right: 68px;
     }
   }
 
@@ -47,7 +50,12 @@
   }
 
   &__about-us {
-    margin-right: 50px;
+    @media (min-width: 700px) {
+      margin-right: 35px;
+    }
+    @media (min-width: 1400px) {
+      margin-right: 50px;
+    }
   }
 
   &__list {
@@ -70,11 +78,21 @@
   }
 
   &__get-help {
-    margin-right: 60px;
+    @media (min-width: 700px) {
+      margin-right: 35px;
+    }
+    @media (min-width: 1400px) {
+      margin-right: 60px;
+    }
   }
 
   &__call-us {
-    margin-right: 60px;
+    @media (min-width: 700px) {
+      margin-right: 35px;
+    }
+    @media (min-width: 1400px) {
+      margin-right: 60px;
+    }
   }
   &__call-phone {
     font-family: "Inter";

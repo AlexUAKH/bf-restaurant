@@ -827,10 +827,6 @@ ul {
   gap: 16px;
 }
 
-.footer__about {
-  margin-right: 68px;
-}
-
 .footer__title {
   font-family: "Inter";
   font-style: normal;
@@ -850,10 +846,6 @@ ul {
   color: #000000;
 }
 
-.footer__about-us {
-  margin-right: 50px;
-}
-
 .footer__list {
   margin-top: 11px;
 }
@@ -869,14 +861,6 @@ ul {
 
 .footer__list-item:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.footer__get-help {
-  margin-right: 60px;
-}
-
-.footer__call-us {
-  margin-right: 60px;
 }
 
 .footer__call-phone {
@@ -1050,6 +1034,7 @@ ul {
   }
 
   .footer__about {
+    margin-right: 35px;
     flex: 0 0 240px;
   }
 
@@ -1057,8 +1042,20 @@ ul {
     font-size: 1.06rem;
   }
 
+  .footer__about-us {
+    margin-right: 35px;
+  }
+
   .footer__list-item {
     font-size: 1.06rem;
+  }
+
+  .footer__get-help {
+    margin-right: 35px;
+  }
+
+  .footer__call-us {
+    margin-right: 35px;
   }
 
   .footer__call-phone {
@@ -1175,6 +1172,22 @@ ul {
 
   .features__feature {
     margin: 0 180px;
+  }
+
+  .footer__about {
+    margin-right: 68px;
+  }
+
+  .footer__about-us {
+    margin-right: 50px;
+  }
+
+  .footer__get-help {
+    margin-right: 60px;
+  }
+
+  .footer__call-us {
+    margin-right: 60px;
   }
 
   .footer__copyright {
