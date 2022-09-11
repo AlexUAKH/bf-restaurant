@@ -11,6 +11,7 @@ export const js = () => {
         })
       )
     )
+    .pipe(app.plugins.replace(/@img\//g, "../img/"))
     .pipe(
       webpack({
         mode: app.isDev ? "development" : "production",

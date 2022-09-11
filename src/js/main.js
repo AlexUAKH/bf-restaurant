@@ -1,33 +1,12 @@
-import * as func from "./modules/func.js";
+import "./modules/collapseHandler.js";
+import "./modules/login.js";
+import { isWebp } from "./modules/webpCheck.js";
 
-func.isWebp();
-const collapse = document.querySelectorAll(".collapse");
+isWebp();
 
-let width = window.innerWidth;
+const itb = document.querySelectorAll(".itb");
 
-collapse.forEach((el) => {
-  if (width < 700) el.classList.remove("open");
-  else el.classList.add("open");
-  el.addEventListener("click", (e) => {
-    if (width < 700) {
-      collapse.forEach((el) => {
-        if (el !== e.target) el.classList.remove("open");
-      });
-      el.classList.toggle("open");
-    }
-  });
-});
+const imgDiv = itb[0].closest(".login__img");
 
-window.addEventListener("resize", () => {
-  width = window.innerWidth;
-  if (width > 700) collapseHandler(collapse, true);
-  else collapseHandler(collapse, false);
-});
-
-function collapseHandler(elements, toOpen) {
-  console.log("tt: ", toOpen);
-  elements.forEach((el) => {
-    if (toOpen) el.classList.add("open");
-    else el.classList.remove("open");
-  });
-}
+imgDiv.style.background = `url(${itb[0].src})`;
+imgDiv.style.backgroundSize = "cover";

@@ -80,6 +80,10 @@ body {
     background: transparent;
     color: $blue;
   }
+  &_brown {
+    background: $login-accent;
+    color: white;
+  }
   &_gplay {
     background: url("@img/google_play_btn.png") 0 0 no-repeat;
   }
@@ -111,12 +115,12 @@ body {
 .text_accent {
   color: $accent;
 }
+
 ul {
   list-style: none;
 }
-.link {
-  text-decoration: none;
-  color: $text;
+
+a {
   transition: all 0.3s;
   cursor: pointer;
   @media (min-width: 700px) {
@@ -124,4 +128,12 @@ ul {
       opacity: 0.5;
     }
   }
+  &.link {
+    text-decoration: none;
+    color: $text;
+  }
+}
+
+.fullWidth {
+  width: 100%;
 }
